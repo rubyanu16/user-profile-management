@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>User Profile Management System</h1>
+
+  <div class="form-container">
+    <input type="hidden" id="userId">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="phone" placeholder="Phone">
+    <button onclick="addOrUpdateUser()">Save</button>
+  </div>
+
+  <h2>User List</h2>
+  <table id="userTable">
+    <thead>
+      <tr><th>Name</th><th>Email</th><th>Phone</th><th>Actions</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
